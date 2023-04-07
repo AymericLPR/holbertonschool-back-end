@@ -12,6 +12,7 @@ def check(request):
     print(request.text)
     print(request.json())
 
+
 def output(edUser, todoUser):
     """ Print the output """
 
@@ -27,7 +28,7 @@ def output(edUser, todoUser):
     for task in todoUser:
         if task["completed"]:
             print("\t {}".format(task["title"]))
-    
+
 
 if len(sys.argv) == 2:
     userLink = "https://jsonplaceholder.typicode.com/users/"
